@@ -1,0 +1,31 @@
+## JavaScript Closures — Short Notes
+
+### 1. Lexical Scope
+
+* A variable’s accessibility depends on **where it is written** in the code.
+* An inner function can access variables from its outer scope.
+* Scope is decided by the **code structure**, not where the function is called.
+
+### 2. Closure
+
+* A closure is created when a function **remembers variables from its outer scope**.
+* The inner function can still use those variables even after the outer function has finished.
+* **Closure = Function + remembered variables**
+
+### 3. How Functions Remember Variables
+
+* JavaScript keeps the required outer variables available for the inner function.
+* This allows the function to use old values later.
+* Each closure can have its **own separate set of variables**.
+
+### 4. Real-World Uses
+
+* **Private variables:** Keep some data hidden from direct outside access.
+* **Counters:** Store and update a value between function calls.
+* **Function factories:** Create functions with different preset values.
+* **Data protection:** Control how certain variables are accessed or changed.
+
+### 5. Easy Example to Remember
+
+* **Normal function:** Does its work and finishes.
+* **Closure:** Does its work but **remembers the variables it needs**.
